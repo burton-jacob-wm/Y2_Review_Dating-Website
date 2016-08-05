@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendars</title>
+</head>
+<body>
+<table>
+    <fieldset>
+        <legend>Your Picture</legend>
+        <label for="picture">Your Image:</label>Your Image: <input type="file" id="picture" name="picture"><br>
+        Preview:
+    </fieldset>
+    <fieldset>
+        <legend>Your Details</legend>
+        <label for="name">Name:</label> <input type="text" id="name" name="name"><br>
+        <label for="gender">Gender:</label> <input type="radio" id="gender" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br>
+        <label for="age">Age:</label> <input type="number" id="age" size="3" name="age"><br>
+        <label for="birthday">Birthday:</label> <input type="date" id="birthday" name="birthday"><br>
+        <label for="color">Favorite Color: </label><input type="color" id="color" name="favcolor"><br>
+        <label for="country">Country:</label>
+        <select id="country">
+            <option>USA</option>
+            <option>Canada</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>United Kingdom</option>
+            <option>Not Specified / Other</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Your Indicators</legend>
+        Short <input type="range" name="points" min="0" max="100"> Tall<br>
+        Poor <input type="range" name="points" min="0" max="100"> Rich<br>
+    </fieldset>
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        Email: <input type="text" name="email"><br>
+        Mobile: <input type="tel" name="email"><br>
+        Address: <textarea></textarea><br>
+        Method of Contact: <input type="checkbox" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
+    </fieldset>
+    <input type="submit" name="submit">
+</table>
+</body>
+</html>
