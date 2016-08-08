@@ -9,7 +9,7 @@
     <fieldset>
         <legend>Your Picture</legend>
         <label for="picture">Your Image:</label>Your Image: <input type="file" id="picture" name="picture"><br>
-        Preview:
+        <label for="preview">Preview:</label><img id="preview">
     </fieldset>
     <fieldset>
         <legend>Your Details</legend>
@@ -30,15 +30,15 @@
     </fieldset>
     <fieldset>
         <legend>Your Indicators</legend>
-        Short <input type="range" name="points" min="0" max="100"> Tall<br>
-        Poor <input type="range" name="points" min="0" max="100"> Rich<br>
+        <label for="height">Height:</label> Short <input type="range" id="height" name="points" min="0" max="100"> Tall<br>
+        <label for="salary">Salary:</label> Poor <input type="range" id="salary" name="points" min="0" max="100"> Rich<br>
     </fieldset>
     <fieldset>
         <legend>Your Contact Information</legend>
-        Email: <input type="text" name="email"><br>
-        Mobile: <input type="tel" name="email"><br>
-        Address: <textarea></textarea><br>
-        Method of Contact: <input type="checkbox" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
+        <label for="email">Email:</label> <input type="text" id="email" name="email"><br>
+        <label for="mobile">Mobile:</label> <input type="tel" id="mobile" name="email"><br>
+        <label for="address">Address:</label> <textarea id="address" name="address"></textarea><br>
+        <label for="method">Method of Contact:</label> <input type="checkbox" id="method" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
     </fieldset>
     <input type="submit" name="submit">
 </table>
