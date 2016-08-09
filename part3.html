@@ -61,12 +61,12 @@
 </style>
 <body>
 <script type="text/javascript">
-    function readURL(input) {
+    function readImg(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
-            reader.onload = function (e) {
+            reader.onload = function (img) {
                 $('#preview')
-                        .attr('src', e.target.result)
+                        .attr('src', img.target.result)
                         .width(100)
                         .height(100);
             };
@@ -74,11 +74,12 @@
         }
     }
 </script>
-<table>
+<h2>Please Enter your Details for Our Dating Website!</h2>
+<form>
     <fieldset>
         <legend>Your Picture</legend>
         <!-- Input for your image -->
-        <label for="picture">Your Image:</label> <input type="file" id="picture" name="picture" onchange="readURL(this);"><br>
+        <label for="picture">Your Image:</label> <input type="file" id="picture" name="picture" onchange="readImg(this);"><br>
         <!-- Preview Image -->
         <label for="preview">Image Preview:</label><img id="preview" src="#" width="100px" height="100px" alt="Your image." />
     </fieldset>
@@ -121,6 +122,6 @@
         <label for="method">Method of Contact:</label> <input type="checkbox" id="method" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
     </fieldset>
     <input type="submit" name="submit">
-</table>
+</form>
 </body>
 </html>

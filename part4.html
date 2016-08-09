@@ -9,17 +9,28 @@
     <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
 </head>
 <style>
+    body{
+        background-color: #d7eff2;
+    }
+    .outer{
+        width: 100%
+    }
+    .center{
+        width: 50%;
+        margin: 0 auto;
+    }
     fieldset{
-        background-color: lightyellow;
-        border: 10px solid yellow;
+        background-color: #b2eb9b;
+        border: 1px solid #b2eb9b;
+        border-radius: 20px;
         margin-bottom: 10px;
         width: 720px;
-        box-shadow: 0 0 10px #888888;
+        box-shadow: 0 0 15px #888888;
     }
     legend{
-        background-color: lightyellow;
-        border: 2px solid yellow;
-        box-shadow: 0 0 10px #888888;
+        background-color: #b2eb9b;
+        border: 1px solid #8ec175;
+        box-shadow: 0 0 12px #888888;
     }
     label{
         width: 180px;
@@ -76,49 +87,54 @@
         }
     }
 </script>
-<table>
-    <fieldset>
-        <legend>Your Picture</legend>
-        <label for="picture">Your Image:</label> <input type="file" id="picture" name="picture" onchange="readURL(this);"><br>
-        <label for="preview">Image Preview:</label><img id="preview" src="#" width="100px" height="100px" alt="Your image." />
-    </fieldset>
-    <fieldset>
-        <legend>Your Details</legend>
-        <label for="name">Name:</label> <input type="text" id="name" name="name"><br>
-        <label for="gender">Gender:</label> <input type="radio" id="gender" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br>
-        <label for="age">Age:</label> <input type="number" id="age" size="3" name="age"><br>
-        <label for="birthday">Birthday:</label> <input type="date" id="birthday" name="birthday"><br>
-        <label for="color">Favorite Color:</label> <input type="color" id="color" name="favcolor"><br>
-        <label for="country">Country:</label>
-        <select id="country">
-            <option>USA</option>
-            <option>Canada</option>
-            <option>France</option>
-            <option>Germany</option>
-            <option>United Kingdom</option>
-            <option>Not Specified / Other</option>
-        </select>
-    </fieldset>
-    <fieldset>
-        <legend>Your Indicators</legend>
-        <label for="height">Height:</label>
-        <label class="sliderLabelLow" for="height">Short</label>
-        <input type="range" id="height" name="points" min="0" max="100">
-        <label class="sliderLabelHigh" for="height">Tall</label><br>
+<div class="outer">
+    <div class="center">
+    <h2>Please Enter your Details for Our Dating Website!</h2>
+    <form>
+        <fieldset>
+            <legend>Your Picture</legend>
+            <label for="picture">Your Image:</label> <input type="file" id="picture" name="picture" onchange="readURL(this);"><br>
+            <label for="preview">Image Preview:</label><img id="preview" src="#" width="100px" height="100px" alt="Your image." />
+        </fieldset>
+        <fieldset>
+            <legend>Your Details</legend>
+            <label for="name">Name:</label> <input type="text" id="name" name="name"><br>
+            <label for="gender">Gender:</label> <input type="radio" id="gender" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br>
+            <label for="age">Age:</label> <input type="number" id="age" size="3" name="age"><br>
+            <label for="birthday">Birthday:</label> <input type="date" id="birthday" name="birthday"><br>
+            <label for="color">Favorite Color:</label> <input type="color" id="color" name="favcolor"><br>
+            <label for="country">Country:</label>
+            <select id="country">
+                <option>USA</option>
+                <option>Canada</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>United Kingdom</option>
+                <option>Not Specified / Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>
+            <label class="sliderLabelLow" for="height">Short</label>
+            <input type="range" id="height" name="points" min="0" max="100">
+            <label class="sliderLabelHigh" for="height">Tall</label><br>
 
-        <label for="salary">Salary:</label>
-        <label class="sliderLabelLow" for="salary">Poor</label>
-        <input type="range" id="salary" name="points" min="0" max="100">
-        <label class="sliderLabelHigh" for="salary">Rich</label><br>
-    </fieldset>
-    <fieldset>
-        <legend>Your Contact Information</legend>
-        <label for="email">Email:</label> <input type="text" id="email" name="email"><br>
-        <label for="mobile">Mobile:</label> <input type="tel" id="mobile" name="email"><br>
-        <label for="address">Address:</label> <textarea id="address" name="address"></textarea><br>
-        <label for="method">Method of Contact:</label> <input type="checkbox" id="method" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
-    </fieldset>
-    <input type="submit" name="submit">
-</table>
+            <label for="salary">Salary:</label>
+            <label class="sliderLabelLow" for="salary">Poor</label>
+            <input type="range" id="salary" name="points" min="0" max="100">
+            <label class="sliderLabelHigh" for="salary">Rich</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label> <input type="text" id="email" name="email"><br>
+            <label for="mobile">Mobile:</label> <input type="tel" id="mobile" name="email"><br>
+            <label for="address">Address:</label> <textarea id="address" name="address"></textarea><br>
+            <label for="method">Method of Contact:</label> <input type="checkbox" id="method" name="method"> Email <input type="checkbox" name="method"> Phone <input type="checkbox" name="method"> Other
+        </fieldset>
+        <input type="submit" name="submit">
+    </form>
+    </div>
+</div>
 </body>
 </html>
